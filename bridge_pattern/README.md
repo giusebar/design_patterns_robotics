@@ -14,4 +14,4 @@ The example I choose to implement helps devide the monolithic code of a RobotDri
 
 ## Example structure
 
-![alt text](https://github.com/giusebar/design_patterns_robotics/tree/F_bridge_pattern/bridge_pattern/images/bridge_pattern.png "Bridge Pattern Example Structure")
+![image](https://github.com/giusebar/design_patterns_robotics/blob/F_bridge_pattern/bridge_pattern/images/bridge_pattern.png?raw=true)
