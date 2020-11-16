@@ -3,7 +3,7 @@
 #ifndef ARM_DRIVER_BRIDGE_PATTERN_HPP
 #define ARM_DRIVER_BRIDGE_PATTERN_HPP
 
-#include <stdio.h>
+#include <iostream>
 
 // this is the interface for the robot arms
 class RobotArm

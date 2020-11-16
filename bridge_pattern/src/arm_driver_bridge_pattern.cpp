@@ -1,5 +1,4 @@
 #include "arm_driver_bridge_pattern.hpp"
-#include <stdio.h>
 
 UniversalRobot::UniversalRobot(){};
 UniversalRobot::~UniversalRobot(){};
@@ -11,7 +10,7 @@ int UniversalRobot::get_number_of_joints()
 
 double* UniversalRobot::get_joints_position()
 {
-  printf("Getting joint position for Universal Robot arm\n");
+  std::cout<<"Getting joint position for Universal Robot arm\n";
   for (int j = 0; j < number_of_joints; ++j)
   {
     joint_states[j] = 2.0;
@@ -24,7 +23,7 @@ void UniversalRobot::set_joints_position(double command[])
 {
   for (int c = 0; c < number_of_joints; ++c)
   {
-    printf("Sending command %f to joint %d of UniversalRobot arm\n", command[c], c);
+    std::cout<<"Sending command: "<<command[c]<<" to joint "<< c <<" of UniversalRobot arm\n";
   }
 }
 
@@ -39,7 +38,7 @@ int Kuka::get_number_of_joints()
 
 double* Kuka::get_joints_position()
 {
-  printf("Getting joint position for Kuka arm\n");
+  std::cout<<"Getting joint position for KUKA arm\n";
   for (int j = 0; j < number_of_joints; ++j)
   {
     joint_states[j] = 1.0;
@@ -51,7 +50,7 @@ void Kuka::set_joints_position(double command[])
 {
   for (int c = 0; c < number_of_joints; ++c)
   {
-    printf("Sending command %f to joint %d of KUKA arm\n", command[c], c);
+    std::cout<<"Sending command: "<<command[c]<<" to joint "<<c<<" of KUKA arm\n";
   }
 }
 
@@ -80,13 +79,14 @@ double* RobotDriver::get_current_robot_arm_state()
 int main()
 {
   Kuka kuka_arm = Kuka();
-  RobotDriver robot_driver = RobotDriver(kuka_arm);
+  UniversalRobot universal_robot_arm = UniversalRobot();
+  RobotDriver robot_driver = RobotDriver(universal_robot_arm);
   int number_of_joints = robot_driver.get_number_of_robot_arm_joints();
   double *joint_states = robot_driver.get_current_robot_arm_state();
 
   for (int j = 0; j < number_of_joints; ++j)
   {
-    printf("Joint %d current position: %f \n", j, joint_states[j]);
+    std::cout<<"Joint "<<j<<": "<<joint_states[j]<<"\n";
   }
 
   double command[number_of_joints] = {1.0, 2.0, 3.0};
