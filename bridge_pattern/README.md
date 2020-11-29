@@ -14,4 +14,4 @@ The example I choose to implement helps to divide the monolithic code of a Robot
 
 ## Example structure
 
-![image](https://github.com/giusebar/design_patterns_robotics/blob/F_bridge_pattern/bridge_pattern/images/bridge_pattern.png?raw=true)
+![image](https://github.com/giusebar/design_patterns_robotics/blob/master/bridge_pattern/images/bridge_pattern.png?raw=true)
