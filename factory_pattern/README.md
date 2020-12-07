@@ -1,9 +1,11 @@
 # Factory Pattern
 
 ## Introduction
-The strategy pattern is a creational design pattern.
+The factory pattern is a creational design pattern.
 Instead of directly creating objects, through the Factory Pattern we can call a special factory method which defines the type of objects to be created.
-This pattern is expecially useful when we don't know which kind of object we are going to need to start with. The required objects is initialized and returned to the main client depending on the requirements.
+This pattern is expecially useful when we don't know which kind of object we are going to need to start with. The required objects is initialized and returned to the main client depending on the requirements. Through the Factory Pattern we have a way of encapsulating the object creation.
+
+The advtange comes when I require some logic before instantiating a certain object. This means that the object creation depends on certain conditions. The factory pattern allows the client to dynimically request the required object without "caring" about the specific object implementation (all we know is that we need a certain type of object at a certain time).
 
 More information and example on the Factory Pattern can be found [here](https://refactoring.guru/design-patterns/factory_method).
 
