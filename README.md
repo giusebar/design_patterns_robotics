@@ -1,2 +1,3 @@
-# design_patterns_robotics
-Implementation of design patters with robotics examples
+# Design Patterns implemented in C++ with robotics examples
+
+Implementation of design patters in C++ with robotics examples
