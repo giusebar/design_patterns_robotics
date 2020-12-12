@@ -9,8 +9,8 @@ The advantage comes when I require some logic before instantiating a certain obj
 
 More information and example on the Factory Pattern can be found [here](https://refactoring.guru/design-patterns/factory_method).
 
-## Example explanation
+## A Practical Robotic Example
 Imagine a robotic arm operating in an unconstructed environment. This may require the robot to use different type of control depending on some sensor reading. The factory pattern can be used to create a ControllerProduct and a main application could call the required controller methodology based on the data collected from the robot.
 
-## Example structure
+## A Practical Robotic Example: UML Diagram
 ![image](images/factory_pattern.png)
