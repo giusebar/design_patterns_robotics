@@ -7,8 +7,8 @@ If there is a class that does something specific in a lot of different ways, the
 
 More information and example on the Strategy Pattern can be found [here](https://refactoring.guru/design-patterns/strategy).
 
-## Example explanation
+## A Practical Robotic Example
 In the robotic field this pattern is useful for a variety of use-cases. For instance in a vision system depending on the goal of what needs to be identified there might be the need for different algorithms. Another example is a motion planner, there are various algorithms that might be used depending on requirements such as speed, efficiency and complexity of the environment. Also when grasping an object the strategy to grasp a certain object might depend on the shape or the obstacles.
 
-## Example structure
+## A Practical Robotic Example: UML Diagram
 ![image](images/strategy_pattern.png)
