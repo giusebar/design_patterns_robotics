@@ -13,4 +13,4 @@ More information and example on the Factory Pattern can be found [here](https://
 Imagine a robotic arm operating in an unconstructed environment. This may require the robot to use different type of control depending on some sensor reading. The factory pattern can be used to create a ControllerProduct and a main application could call the required controller methodology based on the data collected from the robot.
 
 ## Example structure
-![image](https://github.com/giusebar/design_patterns_robotics/blob/master/factory_pattern/images/factory_pattern.png?raw=true)
+![image](images/factory_pattern.png)
