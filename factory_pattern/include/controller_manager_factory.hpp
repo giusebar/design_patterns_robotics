@@ -6,6 +6,9 @@
 #include <iostream>
 #include "controller_products.hpp"
 
+
+// the controller manager is the controller "factory", it will produce the required controller
+// depending on what is requested by the client.
 class ControllerManager
 {
   public:
