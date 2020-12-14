@@ -11,27 +11,11 @@ void TeleopApplication(TeleopFactory& teleop_system)
 
 int main()
 {
-  std::string teleop_product = "simple_teleop";
+  SimpleTeleopFactory teleop_system = SimpleTeleopFactory();
 
-  TeleopFactory teleop_system;
+//   TactileTeleopFactory teleop_system = TactileTeleopFactory();
 
-  if (teleop_product == "simple_teleop")
-  {
-    SimpleTeleopFactory teleop_system = SimpleTeleopFactory();
-  }
-  else if (teleop_product == "tactile_teleop")
-  {
-    TactileTeleopFactory teleop_system = TactileTeleopFactory();
-  }
-  else if (teleop_product == "temperature_teleop")
-  {
-    TemperatureTeleopFactory teleop_system = TemperatureTeleopFactory();
-  }
-  else
-  {
-    return;
-  }
+//   TemperatureTeleopFactory teleop_system = TemperatureTeleopFactory();
 
   TeleopApplication(teleop_system);
-   
 }

@@ -12,8 +12,8 @@
 class TeleopFactory
 {
   public:
-   virtual Glove* create_glove();
-   virtual Sensor* create_sensor();
+   virtual Glove* create_glove() = 0;
+   virtual Sensor* create_sensor() = 0;
 };
 
 class SimpleTeleopFactory : public TeleopFactory
@@ -29,6 +29,9 @@ class SimpleTeleopFactory : public TeleopFactory
 class TactileTeleopFactory : public TeleopFactory
 {
   public:
+   TactileTeleopFactory();
+   ~TactileTeleopFactory();
+
    Glove* create_glove();
    Sensor* create_sensor();
 };
@@ -36,6 +39,9 @@ class TactileTeleopFactory : public TeleopFactory
 class TemperatureTeleopFactory : public TeleopFactory
 {
   public:
+   TemperatureTeleopFactory();
+   ~TemperatureTeleopFactory();
+
    Glove* create_glove();
    Sensor* create_sensor();
 };
