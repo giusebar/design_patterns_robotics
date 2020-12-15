@@ -12,9 +12,9 @@ class UniversalRobot: public RobotArm
     UniversalRobot();
     ~UniversalRobot();
 
-    void set_joints_position(double command[]);
-    double* get_joints_position();
-    int get_number_of_joints();
+    void set_joints_position(double command[]) override;
+    double* get_joints_position() override;
+    int get_number_of_joints() override;
   private:
     const static int number_of_joints = 4;
     double joint_states[number_of_joints];
@@ -26,9 +26,9 @@ class Kuka: public RobotArm
     Kuka();
     ~Kuka();
     
-    void set_joints_position(double command[]);
-    double* get_joints_position();
-    int get_number_of_joints();
+    void set_joints_position(double command[]) override;
+    double* get_joints_position() override;
+    int get_number_of_joints() override;
   private:
     const static int number_of_joints = 3;
     double joint_states[number_of_joints];

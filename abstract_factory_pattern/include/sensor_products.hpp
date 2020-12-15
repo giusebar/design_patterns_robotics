@@ -17,7 +17,7 @@ class BlankSensor : public Sensor
     BlankSensor();
     ~BlankSensor();
 
-    void read_sensor_value();
+    void read_sensor_value() override;
 };
 
 class PressureSensor : public Sensor
@@ -26,7 +26,7 @@ class PressureSensor : public Sensor
     PressureSensor();
     ~PressureSensor();
 
-    void read_sensor_value();
+    void read_sensor_value() override;
 };
 
 class TemperatureSensor : public Sensor
@@ -35,7 +35,7 @@ class TemperatureSensor : public Sensor
     TemperatureSensor();
     ~TemperatureSensor();
 
-    void read_sensor_value();
+    void read_sensor_value() override;
 };
 
 #endif  // SENSOR_PRODUCTS_HPP

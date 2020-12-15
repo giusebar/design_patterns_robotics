@@ -22,8 +22,8 @@ class SimpleTeleopFactory : public TeleopFactory
    SimpleTeleopFactory();
    ~SimpleTeleopFactory();
 
-   Glove* create_glove();
-   Sensor* create_sensor();
+   Glove* create_glove() override;
+   Sensor* create_sensor() override;
 };
 
 class TactileTeleopFactory : public TeleopFactory
@@ -32,8 +32,8 @@ class TactileTeleopFactory : public TeleopFactory
    TactileTeleopFactory();
    ~TactileTeleopFactory();
 
-   Glove* create_glove();
-   Sensor* create_sensor();
+   Glove* create_glove() override;
+   Sensor* create_sensor() override;
 };
 
 class TemperatureTeleopFactory : public TeleopFactory
@@ -42,8 +42,8 @@ class TemperatureTeleopFactory : public TeleopFactory
    TemperatureTeleopFactory();
    ~TemperatureTeleopFactory();
 
-   Glove* create_glove();
-   Sensor* create_sensor();
+   Glove* create_glove() override;
+   Sensor* create_sensor() override;
 };
 
 #endif  //  TELEOP_FACTORY_HPP

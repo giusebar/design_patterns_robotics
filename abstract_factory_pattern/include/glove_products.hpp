@@ -4,11 +4,13 @@
 #define GLOVE_PRODUCTS_HPP
 
 #include <iostream>
+#include "glove_products.hpp"
 
 class Glove
 {
   public:
-    virtual void get_user_fingertip_positions() = 0;
+    virtual void get_fingertip_position() = 0;
+    virtual void set_sensor_feedback() = 0;
 };
 
 class SimpleGlove : public Glove
@@ -17,7 +19,8 @@ class SimpleGlove : public Glove
     SimpleGlove();
     ~SimpleGlove();
 
-    void get_user_fingertip_positions();
+    void get_fingertip_position() override;
+    void set_sensor_feedback() override;
 };
 
 class TactileGlove : public Glove
@@ -26,8 +29,8 @@ class TactileGlove : public Glove
     TactileGlove();
     ~TactileGlove();
 
-    void get_user_fingertip_positions();
-    void set_pressure_of_tactile_feedback();
+    void get_fingertip_position() override;
+    void set_sensor_feedback() override;
 };
 
 class TemperatureGlove : public Glove
@@ -36,8 +39,8 @@ class TemperatureGlove : public Glove
     TemperatureGlove();
     ~TemperatureGlove();
 
-    void get_user_fingertip_positions();
-    void set_temperature_of_temp_feedback();
+    void get_fingertip_position();
+    void set_sensor_feedback();
 };
 
 #endif  //  GLOVE_PRODUCTS_HPP
