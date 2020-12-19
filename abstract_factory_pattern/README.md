@@ -17,4 +17,4 @@ We want our code structure to be flexible enough to easily create FAMILIES of re
 In this sense the Abstract Factory will offer to interface to create a glove and a sensor object. The Tactile teleoperated robot will be the concrete Factory that will require a tactile glove and touch sensors, while the Simple Teleoperated robot will be another concrete Factory that will require the concrete object of simple glove and blank sensors.
 
 ## A Practical Robotic Example: UML Diagram
-![image](images/factory_pattern.png)
+![image](images/abstract_factory_pattern.png)
