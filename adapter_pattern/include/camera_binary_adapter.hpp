@@ -8,11 +8,11 @@
 #include "binary_camera_driver.hpp"
 #include <bitset>
 
-class CameraRosWrapper : public BinaryCameraDriver
+class CameraBinaryAdapter : public BinaryCameraDriver
 {
   public:
-    CameraRosWrapper(AsciiCameraDriver* ascii_point_cloud_camera);
-    ~CameraRosWrapper();
+    CameraBinaryAdapter(AsciiCameraDriver* ascii_point_cloud_camera);
+    ~CameraBinaryAdapter();
 
     std::string transmit_point_cloud_data() override;
   private:

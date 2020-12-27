@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <string>
-#include "adapter_class.hpp"
+#include "camera_binary_adapter.hpp"
 
 class PoseEstimator
 {
