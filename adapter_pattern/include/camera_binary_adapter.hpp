@@ -1,7 +1,7 @@
-// "adapter_class.hpp"
+// "camera_binary_adapter.hpp"
 
-#ifndef ADAPTER_CLASS_HPP
-#define ADAPTER_CLASS_HPP
+#ifndef CAMERA_BINARY_ADAPTER_HPP
+#define CAMERA_BINARY_ADAPTER_HPP
 
 #include <iostream>
 #include "ascii_camera_driver.hpp"
@@ -19,4 +19,4 @@ class CameraBinaryAdapter : public BinaryCameraDriver
     AsciiCameraDriver* ascii_point_cloud_camera;
 };
 
-#endif  // ADAPTER_CLASS_HPP
+#endif  // CAMERA_BINARY_ADAPTER_HPP
