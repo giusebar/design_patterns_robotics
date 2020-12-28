@@ -26,7 +26,6 @@ int main()
   lite_robotic_hand->list_features();
   delete lite_robotic_hand;
 
-
   // changing builder to create dexterous hand manual
   DexterousHandManualBuilder* dexterous_hand_manual_builder = new DexterousHandManualBuilder();
 
