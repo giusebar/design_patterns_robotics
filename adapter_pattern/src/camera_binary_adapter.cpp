@@ -3,9 +3,7 @@
 
 CameraBinaryAdapter::CameraBinaryAdapter(AsciiCameraDriver* ascii_point_cloud_camera)
     : ascii_point_cloud_camera(ascii_point_cloud_camera)
-{
-    std::cout<<"WRAPPER";
-};
+{};
 
 CameraBinaryAdapter::~CameraBinaryAdapter()
 {};
